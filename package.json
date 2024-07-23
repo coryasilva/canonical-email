@@ -1,0 +1,45 @@
+{
+	"name": "canonical-email",
+	"version": "1.0.0",
+	"description": "Email address normalization to remove subdomains, plus addressing, and comments.",
+	"homepage": "https://github.com/coryasilva/canonical-email#readme",
+	"bugs": {
+		"url": "https://github.com/coryasilva/canonical-email/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/coryasilva/canonical-email.git"
+	},
+	"author": {
+		"name": "Cory Silva",
+		"url": "https://corysilva.com"
+	},
+	"keywords": [
+		"email",
+		"address",
+		"normalize",
+		"canonicalize",
+		"address",
+		"subdomain",
+		"plus",
+		"tag"
+	],
+	"engines": {
+		"node": ">=18"
+	},
+	"type": "module",
+	"sideEffects": false,
+	"main": "index.js",
+	"exports": {
+		"types": "./index.d.ts",
+		"default": "./index.js"
+	},
+	"scripts": {
+		"test": "xo && ava && tsc index.d.ts"
+	},
+	"devDependencies": {
+		"ava": "^6.1.3",
+		"typescript": "^5.5.4",
+		"xo": "^0.59.2"
+	}
+}
